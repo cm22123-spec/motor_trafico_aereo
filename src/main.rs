@@ -374,15 +374,13 @@ fn main() {
 //    - El árbol sigue balanceado.
 //
 // 5) Insertar 3500:
-//    - Va como hijo izquierdo de 4000.
-//    - Se genera desbalance en el nodo 5000 (caso LL local).
-//    - Se aplica rotación simple a la derecha sobre 5000.
-//    - Luego se detecta desbalance en la raíz (3000), caso LR.
+//    - Se inserta como hijo izquierdo de 4000.
+//    - Se genera un desbalance tipo LR en el nodo 3000.
 //    - Se aplica rotación doble:
-//         1) Rotación izquierda en 3000
-//         2) Rotación derecha en 5000
-//    - Nueva raíz del árbol: 4000
-//
+//       1. Rotación izquierda en el hijo izquierdo (3000 → 4000)
+//       2. Rotación derecha en la raíz (3000)
+//    - Nueva raíz: 4000   
+//        
 // 6) Insertar 6000:
 //    - Va como hijo derecho de 5000.
 //    - El árbol permanece balanceado.
